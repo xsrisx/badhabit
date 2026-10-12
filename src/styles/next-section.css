@@ -1,0 +1,114 @@
+.next-section {
+  width: 100%;
+  min-height: 900px;
+  padding: 35px 0 100px;
+  background: var(--badhabit-background);
+  overflow: hidden;
+}
+
+.next-section-heading {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 50px;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.next-section-heading h2 {
+  margin: 0;
+  color: var(--badhabit-red);
+  font-family: "Bernoru", sans-serif;
+  font-size: clamp(30px, 1vw, 50px);
+  line-height: 0.98;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.next-section-heading p {
+  margin: 28px auto 0;
+  color: var(--badhabit-red);
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 21px;
+  line-height: 1.3;
+}
+.customer-video-wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.customer-video-track {
+  display: flex;
+  align-items: stretch;
+  gap: 38px;
+  width: max-content;
+  margin-left: 18%;
+}
+
+.customer-video-card {
+  flex: 0 0 auto;
+  overflow: hidden;
+  border-radius: 28px;
+  background: #eee;
+}
+
+.customer-video-main {
+  width: 63vw;
+  height: 550px;
+}
+
+.customer-video-next {
+  width: 30vw;
+  height: 550px;
+}
+
+.customer-video-card video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.customer-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 28px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px;
+  background: var(--badhabit-background);
+  border-radius: 999px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  z-index: 5;
+}
+
+.customer-control-button,
+.customer-play-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  color: var(--badhabit-red);
+  cursor: pointer;
+}
+
+.customer-play-button {
+  background: var(--badhabit-red);
+  color: #fff;
+}
+
+.customer-control-button:hover {
+  background: var(--badhabit-red);
+  color: #fff;
+}
+
+.customer-play-button:hover {
+  background: #fff;
+  color: var(--badhabit-red);
+}
+.next-section {
+  margin-top: -420px;
+}

@@ -1,0 +1,316 @@
+.gut-reviews-section {
+  width: 100%;
+  padding: 70px 4.2% 100px;
+  background: #fff;
+  color: #173b19;
+  font-family: "Archivo Narrow", sans-serif;
+}
+
+.gut-reviews-summary {
+  max-width: 1000px;
+  margin: 0 auto 80px;
+}
+
+.gut-reviews-summary h2 {
+  max-width: 350px;
+  margin: 0 auto 34px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.05;
+  text-align: center;
+}
+
+.gut-rating-overview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+}
+
+.gut-rating-score {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.gut-rating-score > strong {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.gut-review-stars {
+  color: #e7a544;
+  font-size: 25px;
+  letter-spacing: 2px;
+  white-space: nowrap;
+}
+
+.gut-rating-score p {
+  margin-top: 2px;
+  font-size: 16px;
+}
+
+.gut-rating-breakdown {
+  min-width: 290px;
+  padding-left: 35px;
+  border-left: 1px solid #deded8;
+}
+
+.gut-rating-row {
+  display: grid;
+  grid-template-columns: 14px 20px minmax(80px, 150px) 40px;
+  align-items: center;
+  gap: 7px;
+  margin: 7px 0;
+  font-size: 14px;
+}
+
+.gut-rating-star {
+  color: #e7a544;
+  font-size: 18px;
+}
+
+.gut-rating-track {
+  height: 6px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #e9e9e6;
+}
+
+.gut-rating-track > span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: #173b19;
+}
+
+.gut-rating-count {
+  text-align: right;
+}
+
+.gut-reviews-toolbar {
+  padding-bottom: 22px;
+  border-bottom: 1px solid #d9d9d3;
+}
+
+.gut-reviews-toolbar input {
+  width: 375px;
+  max-width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #e3e3df;
+  border-radius: 0;
+  outline-color: #173b19;
+  background: transparent;
+  color: #173b19;
+  font: inherit;
+  font-size: 16px;
+}
+
+.gut-reviews-popular {
+  margin-top: 22px;
+}
+
+.gut-reviews-popular > p {
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+
+.gut-review-topic-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.gut-review-topic-list button {
+  padding: 10px 16px;
+  border: 1px solid #e5e5e0;
+  color: #173b19;
+  font-family: inherit;
+  font-size: 15px;
+  text-transform: lowercase;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.gut-review-topic-list button:hover,
+.gut-review-topic-list button.selected {
+  background: #173b19;
+  color: #fff;
+}
+
+.gut-review-topic-list .gut-show-topics {
+  border: none;
+  padding-left: 0;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.gut-reviews-sort {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 7px;
+  margin-top: -35px;
+  font-size: 15px;
+}
+
+.gut-reviews-sort select {
+  max-width: 170px;
+  border: none;
+  background: transparent;
+  color: #173b19;
+  font: inherit;
+  cursor: pointer;
+}
+
+.gut-review-card {
+  display: grid;
+  grid-template-columns: 155px minmax(0, 1fr);
+  gap: 22px;
+  padding: 42px 0;
+  border-bottom: 1px solid #e1e1dc;
+}
+
+.gut-review-author {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9px;
+  font-size: 16px;
+}
+
+.gut-verified-reviewer {
+  font-size: 13px;
+}
+
+.gut-review-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 12px;
+}
+
+.gut-review-card-top time {
+  flex-shrink: 0;
+  font-size: 15px;
+}
+
+.gut-review-card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.gut-review-card p {
+  max-width: 1000px;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.gut-empty-stars {
+  color: #deded8;
+}
+
+.gut-no-reviews {
+  padding: 50px 0;
+  text-align: center;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .gut-reviews-section {
+    padding: 50px 22px 70px;
+  }
+
+  .gut-reviews-summary {
+    margin-bottom: 50px;
+  }
+
+  .gut-reviews-summary h2 {
+    font-size: 32px;
+  }
+
+  .gut-rating-overview {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .gut-rating-breakdown {
+    width: 100%;
+    max-width: 330px;
+    padding: 20px 0 0;
+    border-left: none;
+    border-top: 1px solid #deded8;
+  }
+
+  .gut-reviews-sort {
+    justify-content: flex-start;
+    margin-top: 25px;
+  }
+
+  .gut-review-card {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 28px 0;
+  }
+
+  .gut-review-card-top {
+    align-items: flex-start;
+  }
+
+  .gut-review-card-top .gut-review-stars {
+    font-size: 21px;
+  }
+
+  .gut-review-card-top time {
+    font-size: 13px;
+  }
+}
+
+/* BADHABIT red branding */
+.gut-reviews-section {
+  color: #c80302;
+}
+
+.gut-rating-track > span {
+  background: #c80302;
+}
+
+.gut-review-topic-list button {
+  color: #c80302;
+  border-color: rgba(200, 3, 2, 0.2);
+}
+
+.gut-review-topic-list button:hover,
+.gut-review-topic-list button.selected {
+  background: #c80302;
+  color: #fff;
+}
+
+.gut-reviews-toolbar input {
+  color: #c80302;
+  outline-color: #c80302;
+}
+
+.gut-reviews-sort select {
+  color: #c80302;
+}
+
+.gut-verified-reviewer {
+  color: #c80302;
+}
+
+.gut-review-card {
+  border-bottom-color: rgba(200, 3, 2, 0.2);
+}
+
+.gut-rating-breakdown {
+  border-left-color: rgba(200, 3, 2, 0.2);
+}
+
+.gut-rating-track {
+  background: rgba(200, 3, 2, 0.1);
+}

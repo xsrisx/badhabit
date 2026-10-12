@@ -1,0 +1,1241 @@
+.gut-product-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px 36px 80px;
+  background: var(--badhabit-background);
+  color: var(--badhabit-red);
+}
+
+.gut-product-gallery {
+  width: 100%;
+  max-height: none;
+  overflow-y: visible;
+  scrollbar-width: none;
+}
+
+.gut-product-gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.gut-product-main-image {
+  width: 100%;
+  height: 690px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.gut-product-main-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gut-product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.gut-product-grid img {
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+.gut-product-page {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(380px, 0.75fr);
+  gap: 48px;
+  align-items: start;
+}
+
+.gut-product-info {
+  position: sticky;
+  top: 110px;
+  padding: 20px 20px 40px 10px;
+  color: var(--badhabit-red);
+}
+
+.gut-product-kicker {
+  margin: 0 0 18px;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.gut-product-info h1 {
+  margin: 0 0 18px;
+  font-family: "Bernoru", sans-serif;
+  font-size: clamp(34px, 2.2vw, 48px);
+  line-height: 0.95;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.gut-product-reviews {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 16px;
+}
+
+.gut-product-reviews span:first-child {
+  letter-spacing: 0.08em;
+}
+
+.gut-product-description {
+  max-width: 520px;
+  margin: 0 0 28px;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 21px;
+  line-height: 1.25;
+}
+
+.gut-product-price {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.gut-product-price strong {
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.gut-product-price span {
+  padding: 5px 9px;
+  background: var(--badhabit-red);
+  color: #fff;
+  border-radius: 5px;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.gut-product-supply {
+  margin: 7px 0 24px;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 16px;
+}
+
+.gut-add-to-cart {
+  width: 100%;
+  padding: 18px 24px;
+  background: var(--badhabit-red);
+  color: #fff;
+  border-radius: 12px;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.gut-add-to-cart:hover {
+  background: #fff;
+  color: var(--badhabit-red);
+  border: 1px solid var(--badhabit-red);
+}
+
+.gut-product-guarantee {
+  margin: 12px 0 0;
+  text-align: center;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 14px;
+}
+.gut-accordion {
+  margin-top: 18px;
+  border-top: 1px solid rgba(200, 3, 2, 0.25);
+}
+
+.gut-accordion-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 18px 0;
+
+  color: var(--badhabit-red);
+
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.gut-accordion-header span:last-child {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.gut-accordion-content {
+  padding: 0 0 20px;
+  color: var(--badhabit-red);
+  font-family: "Archivo Narrow", sans-serif;
+}
+
+.gut-accordion-content > p {
+  margin: 0 0 8px;
+  font-size: 17px;
+  line-height: 1.25;
+}
+
+.gut-accordion-content > div {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(200, 3, 2, 0.12);
+}
+
+.gut-accordion-content strong {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.gut-accordion-content div p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.25;
+}
+.gut-image-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(10, 12, 11, 0.92);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  padding: 40px;
+}
+
+.gut-lightbox-content {
+  width: min(920px, 90vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.gut-lightbox-content > img {
+  display: block;
+  width: 100%;
+  max-height: 68vh;
+  object-fit: contain;
+  border-radius: 24px;
+}
+
+.gut-lightbox-close {
+  position: absolute;
+  top: 32px;
+  right: 42px;
+  color: #fff;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 42px;
+  font-weight: 300;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.gut-lightbox-thumbnails {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.gut-lightbox-thumbnails button {
+  width: 76px;
+  height: 76px;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  opacity: 0.65;
+  cursor: pointer;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.gut-lightbox-thumbnails button:hover,
+.gut-lightbox-thumbnails button.active {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.gut-lightbox-thumbnails img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gut-product-main-image,
+.gut-product-grid img {
+  cursor: zoom-in;
+}
+.gut-bundle-product {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 18px 0;
+}
+
+.gut-bundle-product img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.gut-bundle-product h2 {
+  margin: 0;
+}
+
+.gut-bundle-price {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 8px 0 16px;
+  font-family: "Archivo Narrow", sans-serif;
+}
+
+.gut-bundle-mrp {
+  font-size: 18px;
+  text-decoration: line-through;
+  opacity: 0.55;
+}
+
+.gut-bundle-sale {
+  font-size: 25px;
+  font-weight: 700;
+}
+.gut-bundle-card {
+  margin-top: 24px;
+  padding: 22px;
+  border: 1px solid rgba(200, 3, 2, 0.2);
+  border-radius: 18px;
+}
+
+.gut-bundle-badge {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.gut-bundle-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 18px;
+  background: var(--badhabit-red);
+  color: #fff;
+  border-radius: 10px;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+.gut-next-section {
+  width: 100%;
+  min-height: 700px;
+  margin-top: 10px;
+  padding: 80px 36px;
+  background-color: var(--badhabit-background);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.gut-science-overlay {
+  width: 100%;
+  min-height: 650px;
+  padding: 90px 48px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gut-science-overlay h2 {
+  max-width: 900px;
+  margin: 0 0 70px;
+  color: #fff;
+  font-family: "Bernoru", sans-serif;
+  font-size: clamp(38px, 3.2vw, 42px);
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.gut-science-glass {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  padding: 42px 38px;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 28px;
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+}
+
+.gut-science-item {
+  padding: 0 28px;
+  color: #fff;
+}
+
+.gut-science-item + .gut-science-item {
+  border-left: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.gut-science-item h3 {
+  margin: 0 0 14px;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.gut-science-item p {
+  margin: 0;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 17px;
+  line-height: 1.25;
+}
+.gut-format-section {
+  width: 100%;
+  min-height: 850px;
+  padding: 100px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+  background: var(--badhabit-background);
+  color: var(--badhabit-red);
+}
+
+.gut-format-image {
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  border-radius: 28px;
+}
+
+.gut-format-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gut-format-content {
+  max-width: 620px;
+}
+
+.gut-format-content > h2 {
+  margin: 0 0 24px;
+  font-family: "Bernoru", sans-serif;
+  font-size: clamp(38px, 4vw, 58px);
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.gut-format-content > p {
+  max-width: 540px;
+  margin: 0 0 50px;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 21px;
+  line-height: 1.25;
+}
+
+.gut-format-product {
+  position: relative;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gut-format-test-tube {
+  position: relative;
+  z-index: 2;
+  width: 300px;
+}
+
+.gut-format-test-tube img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.gut-format-detail {
+  position: absolute;
+  width: 240px;
+  font-family: "Archivo Narrow", sans-serif;
+  z-index: 3;
+}
+
+.gut-format-detail h3 {
+  position: relative;
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.gut-format-detail p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+/* BODY LABEL — aligned with the main tube body */
+.gut-format-detail-left {
+  left: 0;
+  top: 46%;
+}
+
+/* line + arrow reaching the tube body */
+.gut-format-detail-left::after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  right: -55px;
+  width: 50px;
+  border-top: 1.5px solid var(--badhabit-red);
+}
+
+.gut-format-detail-left::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: -60px;
+  width: 9px;
+  height: 9px;
+  border-top: 1.5px solid var(--badhabit-red);
+  border-right: 1.5px solid var(--badhabit-red);
+  transform: rotate(45deg);
+}
+
+/* CORK CAP LABEL — aligned with the cork */
+.gut-format-detail-right {
+  right: 0;
+  top: 8%;
+}
+
+/* line from label toward cork */
+.gut-format-detail-right::after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: -70px;
+  width: 65px;
+  border-top: 1.5px solid var(--badhabit-red);
+}
+
+/* arrow head touching the cork */
+.gut-format-detail-right::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -75px;
+  width: 9px;
+  height: 9px;
+  border-top: 1.5px solid var(--badhabit-red);
+  border-left: 1.5px solid var(--badhabit-red);
+  transform: rotate(-45deg);
+}
+/* Smaller section heading */
+.gut-format-content > h2 {
+  font-size: clamp(32px, 2.2vw, 38px);
+  max-width: 500px;
+}
+
+/* Smaller left image */
+.gut-format-image {
+  height: 580px;
+}
+
+/* Smaller test tube */
+.gut-format-test-tube {
+  width: 200px;
+}
+.gut-difference-section {
+  width: 100%;
+  padding: 120px 50px;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 80px;
+  align-items: start;
+  background: var(--badhabit-background);
+  color: var(--badhabit-red);
+}
+
+.gut-difference-left {
+  position: relative;
+}
+
+.gut-difference-heading {
+  margin-bottom: 90px;
+}
+
+.gut-difference-heading h2 {
+  margin: 0;
+  font-family: "Bernoru", sans-serif;
+  font-size: clamp(34px, 3.5vw, 52px);
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.gut-difference-heading h3 {
+  margin: 10px 0 24px;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.gut-difference-heading p {
+  margin: 0 0 14px;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 19px;
+}
+
+.gut-difference-heading a {
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.gut-difference-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.gut-difference-image {
+  width: 100%;
+  min-height: 560px;
+  overflow: hidden;
+  border-radius: 28px;
+}
+
+.gut-difference-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gut-difference-timeline {
+  position: relative;
+  padding-left: 32px;
+}
+
+.gut-difference-timeline::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  bottom: 8px;
+  width: 1px;
+  background: rgba(200, 3, 2, 0.25);
+}
+
+.gut-difference-step {
+  position: relative;
+  min-height: 180px;
+  padding: 0 0 55px;
+}
+
+.gut-difference-dot {
+  position: absolute;
+  left: -32px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  border: 1.5px solid var(--badhabit-red);
+  border-radius: 50%;
+  background: var(--badhabit-background);
+}
+
+.gut-difference-title {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.gut-difference-title span {
+  flex-shrink: 0;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.gut-difference-title strong {
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.gut-difference-copy ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.gut-difference-copy li {
+  margin-bottom: 7px;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 17px;
+  line-height: 1.2;
+}
+.gut-difference-step {
+  opacity: 0.35;
+  transition: opacity 0.5s ease;
+}
+
+.gut-difference-step.active {
+  opacity: 1;
+}
+.gut-difference-step.active .gut-difference-dot {
+  background: var(--badhabit-red);
+  transform: scale(1.15);
+}
+
+.gut-difference-step.active .gut-difference-title strong {
+  font-size: 26px;
+}
+
+.gut-difference-step.active .gut-difference-copy li {
+  opacity: 1;
+}
+/* GS:02 Difference — compact layout */
+
+.gut-difference-section {
+  padding: 70px 120px;
+  gap: 50px;
+}
+
+.gut-difference-heading {
+  margin-bottom: 55px;
+}
+
+.gut-difference-heading h2 {
+  font-size: clamp(28px, 2vw, 42px);
+}
+
+.gut-difference-heading h3 {
+  margin: 7px 0 16px;
+  font-size: 23px;
+}
+
+.gut-difference-heading p {
+  font-size: 17px;
+}
+
+.gut-difference-right {
+  gap: 18px;
+}
+
+.gut-difference-image {
+  min-height: 400px;
+  height: 450px;
+  max-height: none;
+}
+
+.gut-difference-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Ingredients and Research Section */
+.gut-ingredients-section {
+  width: 100%;
+  padding: 10px 50px;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 60px;
+  align-items: start;
+  background: var(--badhabit-background);
+  color: var(--badhabit-red);
+}
+
+.gut-ingredients-video {
+  position: sticky;
+  top: 110px;
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+  border-radius: 28px;
+}
+
+.gut-ingredients-video video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gut-video-label {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  padding: 10px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 30px;
+  background: rgba(20, 20, 20, 0.35);
+  color: #fff;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 18px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.gut-ingredients-content h2 {
+  max-width: 550px;
+  margin: 0 0 16px;
+  font-family: "Bernoru", sans-serif;
+  font-size: clamp(24px, 1.5vw, 32px);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.gut-ingredients-content > a {
+  display: inline-block;
+  margin-bottom: 40px;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+#gut-ingredients-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 17px;
+}
+
+#gut-ingredients-table {
+  font-size: 15px;
+}
+
+#gut-ingredients-table th,
+#gut-ingredients-table td {
+  padding: 11px 6px;
+}
+
+#gut-ingredients-table th {
+  font-size: 13px;
+}
+
+.gut-ingredients-content > a {
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+
+.gut-testing-grid {
+  margin-top: 24px;
+  gap: 14px 10px;
+  font-size: 14px;
+}
+
+#gut-ingredients-table th,
+#gut-ingredients-table td {
+  padding: 17px 8px;
+  border-top: 1px solid rgba(200, 3, 2, 0.2);
+  text-align: left;
+}
+
+#gut-ingredients-table th {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#gut-ingredients-table th:last-child,
+#gut-ingredients-table td:last-child {
+  text-align: right;
+  white-space: nowrap;
+}
+
+#gut-ingredients-table tbody tr:last-child {
+  border-bottom: 1px solid rgba(200, 3, 2, 0.2);
+}
+
+.gut-testing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 3px 14px;
+  margin-top: 40px;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 16px;
+}
+
+.gut-testing-grid > div {
+  display: flex;
+  align-items: center;
+  min-height: 42px;
+  line-height: 1.2;
+}
+
+/* BADHABIT Cart Drawer */
+.gut-cart-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  justify-content: flex-end;
+  background: rgba(20, 20, 20, 0.42);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
+.gut-cart-drawer {
+  width: min(520px, 100%);
+  height: 100%;
+  overflow-y: auto;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  background: var(--badhabit-background);
+  color: var(--badhabit-red);
+  box-shadow: -10px 0 40px rgba(0, 0, 0, 0.12);
+  animation: gutCartSlideIn 0.3s ease;
+}
+
+@keyframes gutCartSlideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.gut-cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 22px;
+  border-bottom: 1px solid rgba(200, 3, 2, 0.2);
+}
+
+.gut-cart-header h2 {
+  font-family: "Bernoru", sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.gut-cart-close {
+  color: var(--badhabit-red);
+  font-size: 36px;
+  line-height: 1;
+}
+
+.gut-cart-promo {
+  margin: 20px 0;
+  padding: 14px;
+  background: rgba(200, 3, 2, 0.07);
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.gut-cart-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.gut-cart-item {
+  display: grid;
+  grid-template-columns: 100px minmax(0, 1fr) auto;
+  gap: 14px;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(200, 3, 2, 0.18);
+}
+
+.gut-cart-item > img {
+  width: 100px;
+  height: 115px;
+  object-fit: contain;
+}
+
+.gut-cart-item-info h3 {
+  margin: 0 0 6px;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 17px;
+  line-height: 1.2;
+}
+
+.gut-cart-item-info > p {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.gut-cart-item-info > strong,
+.gut-cart-line-total {
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.gut-cart-quantity {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 12px;
+  padding: 6px 10px;
+  border: 1px solid rgba(200, 3, 2, 0.3);
+}
+
+.gut-cart-quantity button {
+  color: var(--badhabit-red);
+  font-size: 20px;
+}
+
+.gut-cart-quantity span {
+  min-width: 12px;
+  text-align: center;
+}
+
+.gut-cart-bundle {
+  margin-top: 25px;
+  padding: 20px;
+  border: 1px solid rgba(200, 3, 2, 0.25);
+  border-radius: 14px;
+}
+
+.gut-cart-bundle > h3 {
+  margin-bottom: 12px;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 20px;
+}
+
+.gut-cart-suggestion {
+  display: grid;
+  grid-template-columns: 65px minmax(0, 1fr) 35px;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-top: 1px solid rgba(200, 3, 2, 0.15);
+}
+
+.gut-cart-suggestion img {
+  width: 65px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.gut-cart-suggestion p {
+  margin-bottom: 5px;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.gut-cart-suggestion strong {
+  font-size: 15px;
+}
+
+.gut-cart-suggestion > button {
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--badhabit-red);
+  border-radius: 50%;
+  color: var(--badhabit-red);
+  font-size: 23px;
+}
+
+.gut-cart-footer {
+  position: sticky;
+  bottom: -28px;
+  margin-top: auto;
+  padding: 22px 0 28px;
+  background: var(--badhabit-background);
+  border-top: 1px solid rgba(200, 3, 2, 0.2);
+}
+
+.gut-cart-footer > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 19px;
+}
+
+.gut-cart-footer > p {
+  margin: 10px 0 16px;
+  font-size: 14px;
+}
+
+.gut-cart-checkout {
+  width: 100%;
+  padding: 16px;
+  background: var(--badhabit-red);
+  color: white;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media (max-width: 480px) {
+  .gut-cart-drawer {
+    padding: 20px;
+  }
+
+  .gut-cart-item {
+    grid-template-columns: 78px minmax(0, 1fr);
+  }
+
+  .gut-cart-item > img {
+    width: 78px;
+    height: 95px;
+  }
+
+  .gut-cart-line-total {
+    grid-column: 2;
+  }
+
+  .gut-cart-header h2 {
+    font-size: 21px;
+  }
+}
+
+/* Floating Cart Button */
+.gut-floating-cart {
+  position: fixed;
+  top: 24px;
+  right: 30px;
+  z-index: 9998;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 17px;
+  border: 1px solid rgba(200, 3, 2, 0.3);
+  border-radius: 30px;
+  background: var(--badhabit-background);
+  color: var(--badhabit-red);
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+.gut-floating-cart-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 23px;
+  height: 23px;
+  padding: 0 5px;
+  border-radius: 50%;
+  background: var(--badhabit-red);
+  color: #fff;
+  font-size: 13px;
+}
+
+@media (max-width: 480px) {
+  .gut-floating-cart {
+    top: 14px;
+    right: 14px;
+    padding: 9px 12px;
+    font-size: 14px;
+  }
+}
+
+/* Align each product's quantity control under its price */
+.gut-cart-item {
+  grid-template-columns: 100px minmax(0, 1fr);
+  position: relative;
+  padding-right: 5px;
+}
+
+.gut-cart-item-info {
+  position: relative;
+  padding-right: 0;
+  padding-bottom: 42px;
+}
+
+.gut-cart-line-total {
+  position: absolute;
+  right: 5px;
+  top: 20px;
+}
+
+.gut-cart-quantity {
+  position: absolute;
+  right: 5px;
+  bottom: 0;
+  margin-top: 0;
+}
+
+.gut-cart-item-info > strong {
+  display: block;
+  margin-top: 8px;
+  padding-right: 85px;
+}
+
+@media (max-width: 480px) {
+  .gut-cart-item {
+    grid-template-columns: 78px minmax(0, 1fr);
+  }
+
+  .gut-cart-line-total {
+    right: 0;
+  }
+
+  .gut-cart-quantity {
+    right: 0;
+  }
+}
+
+/* Cart subtotal and discounted total */
+.gut-cart-total-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 19px;
+}
+
+.gut-cart-total-prices {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.gut-cart-original-total {
+  color: rgba(200, 3, 2, 0.55);
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: line-through;
+  text-decoration-thickness: 1.5px;
+}
+
+.gut-cart-total-prices strong {
+  color: var(--badhabit-red);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.gut-cart-savings {
+  margin: 8px 0 12px;
+  color: var(--badhabit-red);
+  font-size: 15px;
+  text-align: right;
+}

@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Bernoru";
+  src: url("./assets/fonts/bernoru-blackultraexpanded.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Archivo Narrow";
+  src: url("./assets/fonts/ArchivoNarrow-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --badhabit-red: #c80302;
+  --badhabit-background: #f8f7f2;
+  --badhabit-black: #111111;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--badhabit-background);
+  color: var(--badhabit-black);
+  font-family: "Archivo Narrow", sans-serif;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+html,
+body {
+  overflow-x: hidden;
+}
