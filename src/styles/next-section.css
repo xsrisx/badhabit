@@ -110,9 +110,5 @@
   color: var(--badhabit-red);
 }
 .next-section {
-  margin-top: -420px;
-}
-
-.body-section + .next-section {
-  margin-top: -420px !important;
+  margin-top: 0;
 }
