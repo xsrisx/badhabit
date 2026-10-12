@@ -7,6 +7,7 @@ import {
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
+import humanVideo from "./assets/videos/human.mp4";
 import Footer from "./components/Footer";
 import "./styles/labs-section.css";
 import labsImage from "./assets/images/labs-image.png";
@@ -247,13 +248,7 @@ function App() {
         </div>
 
         <div className="body-video">
-          <video
-            src="/src/assets/videos/human.mp4"
-            autoPlay
-            muted
-            loop
-            playsInline
-          />
+          <video src={humanVideo} autoPlay muted loop playsInline />
         </div>
       </section>
 
